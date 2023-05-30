@@ -86,9 +86,9 @@ app.post('/delete', async(req, res) =>{
     }
 })
 
+const port = 5000
 
-
-app.listen(3000, '192.168.0.227' ,() => {
+app.listen(process.env.PORT || port ,() => {
     console.log("listening on port 3000");
   });
 
